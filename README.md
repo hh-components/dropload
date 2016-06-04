@@ -9,13 +9,12 @@ a javascript implementation of pull to refresh and up to loadmore
 
 [历史背景介绍](Intro.md)
 
-## 最新版本 (The latest version)
+## 最新版本 (The last version)
 
 ### 0.9.0(160215)
 
 * 删除`dropReload()` API，功能集成到之前`resetload()`里
-* 优化`noData()`，`noData(false)`为有数据
-* 修复只调用下拉刷新，不调用上拉加载更多bug
+* 修复只用下拉刷新，不用上拉加载更多bug
 
 [所有更新日志](Changelog.md)
 
@@ -103,12 +102,6 @@ $('.element').dropload({
 `unlock()` 解锁dropload
 
 `noData()` 无数据
-
-|      参数      |             说明            |
-|----------------|----------------------------|
-| `noData()`     |           无数据            |
-| `noData(true)` |           无数据            |
-| `noData(false)`|           有数据            |
 
 `resetload()` 重置。每次数据加载完，必须重置
 
